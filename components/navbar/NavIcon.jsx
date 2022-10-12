@@ -6,7 +6,7 @@ const NavIcon = ({ icon }) => {
     <motion.div
       whileHover={{ scale: 0.9 }}
       whileTap={{ scale: 1.1 }}
-      className={`rounded-lg px-4 py-2 md:text-lg cursor-pointer hover:bg-black transition-colors ease-linear duration-200 text-neutral-200 bg-purple-700`}
+      className={`rounded-lg px-4 py-2 md:text-lg cursor-pointer bg-gradient-to-br from-purple-500 to-purple-800 hover:from-neutral-600 hover:to-neutral-800 transition-colors ease-linear duration-200 text-neutral-200 `}
     >
       {icon}
     </motion.div>
