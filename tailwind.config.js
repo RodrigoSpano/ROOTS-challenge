@@ -10,6 +10,7 @@ module.exports = {
       noto: ['Noto Serif Telugu, serif'],
       comforter: ['Comforter Brush, cursive'],
       pacifico: ['Pacifico, cursive'],
+      mukta: ['Mukta , sans-serif'],
     },
     extend: {},
   },

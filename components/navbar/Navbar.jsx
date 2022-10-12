@@ -4,16 +4,13 @@ import NavItems from './NavItems';
 import MenuItems from './responsiveMenu/MenuItems';
 
 const Navbar = () => {
-  let open = true;
-
   return (
     <div className='w-full h-14 flex flex-row px-20 items-center justify-between select-none'>
       <h1 className='text-[33px] font-bold font-comforter text-center pt-2 text-purple-700'>
         RS.Studio
       </h1>
       <div className='flex gap-10 items-center'>
-        {/* <NavItems /> */}
-        {open ? <MenuItems /> : <NavItems />}
+        <NavItems />
         <NavbIcons />
       </div>
     </div>
