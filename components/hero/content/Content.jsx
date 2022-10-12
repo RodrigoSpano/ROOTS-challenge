@@ -3,7 +3,7 @@ import React from 'react';
 
 const Content = () => {
   return (
-    <div className='flex flex-col items-start justify-center text-white '>
+    <div className='flex flex-col items-start justify-center text-white select-none'>
       <div className='flex flex-col text-[60px] lg:text-[80px] font-mukta font-bold capitalize space-y-[-20px]'>
         <h1>Mandalor NFT</h1>
         <h1 className='text-orange-400'>Collection</h1>
