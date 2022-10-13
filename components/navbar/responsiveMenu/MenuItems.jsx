@@ -17,11 +17,11 @@ const MenuItems = () => {
     <div
       className={`absolute ${
         active ? 'top-0' : 'top-[-220px]'
-      } flex flex-col items-center py-5 gap-5 font-lato w-full left-0 bg-black z-1 text-neutral-200 transition-all ease-linear duration-300 lg:hidden`}
+      } flex flex-col items-center py-5 gap-5 font-lato w-full left-0 bg-zinc-900 shadow-md rounded-b-3xl z-10 text-neutral-200 transition-all ease-linear duration-300 lg:hidden`}
     >
       <Item text='Home' />
       <Item text='Collection' />
-      <Item text='Roadmap' />
+      <Item text='Community' />
       <Item text='Team' />
       <RiCloseFill
         className='cursor-pointer absolute top-5 right-10 rounded-full z-99 text-3xl'

@@ -8,7 +8,7 @@ const NavItems = () => {
       <div className='hidden lg:flex flex-row text-neutral-100 gap-10 font-bold font-[lato]'>
         <Item text='Home' />
         <Item text='Collection' />
-        <Item text='Roadmap' />
+        <Item text='Community' />
         <Item text='Team' />
       </div>
       <MenuItems />

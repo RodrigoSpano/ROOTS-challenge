@@ -3,7 +3,7 @@ import React from 'react';
 
 const Content = () => {
   return (
-    <div className='flex flex-col items-center gap-2'>
+    <div className='flex flex-col items-center gap-4'>
       <div className='flex flex-row gap-2 font-bold font-lato text-[30px] lg:text-[50px]'>
         <h2 className='text-white'>About the </h2>
         <h2 className='text-orange-500'>collection</h2>
@@ -22,7 +22,7 @@ const Content = () => {
       </div>
       <motion.button
         whileHover={{ scale: 0.9 }}
-        className='capitalize bg-gradient-to-br from-purple-800 to-purple-500 rounded-md font-bold text-base md:text-lg px-4 py-2 md:px-10 md:py-3 text-white mt-4
+        className='capitalize bg-gradient-to-br from-purple-800 to-purple-500 rounded-md font-bold text-base md:text-lg px-4 py-2 md:px-10 md:py-3 text-white mt-6
       hover:from-neutral-500 hover:to-neutral-800'
       >
         learn more

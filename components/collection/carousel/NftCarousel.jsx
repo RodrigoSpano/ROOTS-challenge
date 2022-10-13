@@ -1,7 +1,8 @@
-import Image from 'next/image';
 import React from 'react';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
+
+import { motion } from 'framer-motion';
 
 const NftCarousel = () => {
   const responsive = {
@@ -11,40 +12,60 @@ const NftCarousel = () => {
   };
 
   const items = [
-    <div className='flex items-center justify-center' data-value='1'>
+    <motion.div
+      whileHover={{ scale: 0.9 }}
+      className='shadow-xl flex items-center justify-center'
+      data-value='1'
+    >
       <img
         className='w-[200px] h-[300px] lg:w-[300px] lg:h-[400px] object-cover rounded-lg '
         src='/assets/bored1.jpeg'
       />
-    </div>,
-    <div className='flex items-center justify-center' data-value='2'>
+    </motion.div>,
+    <motion.div
+      whileHover={{ scale: 0.9 }}
+      className='shadow-xl flex items-center justify-center'
+      data-value='2'
+    >
       <img
         className='w-[200px] h-[300px] lg:w-[300px] lg:h-[400px] object-cover rounded-lg '
         src='/assets/bored2.png'
       />
-    </div>,
-    <div className='flex items-center justify-center' data-value='3'>
+    </motion.div>,
+    <motion.div
+      whileHover={{ scale: 0.9 }}
+      className='shadow-xl flex items-center justify-center'
+      data-value='3'
+    >
       <img
         className='w-[200px] h-[300px] lg:w-[300px] lg:h-[400px] object-cover rounded-lg '
         src='/assets/bored3.png'
       />
-    </div>,
-    <div className='flex items-center justify-center' data-value='4'>
+    </motion.div>,
+    <motion.div
+      whileHover={{ scale: 0.9 }}
+      className='shadow-xl flex items-center justify-center'
+      data-value='4'
+    >
       <img
         className='w-[200px] h-[300px] lg:w-[300px] lg:h-[400px] object-cover rounded-lg '
         src='/assets/bored4.png'
       />
-    </div>,
-    <div className='flex items-center justify-center' data-value='5'>
+    </motion.div>,
+    <motion.div
+      whileHover={{ scale: 0.9 }}
+      className='shadow-xl flex items-center justify-center'
+      data-value='5'
+    >
       <img
         className='w-[200px] h-[300px] lg:w-[300px] lg:h-[400px] object-cover rounded-lg '
         src='/assets/bored5.png'
       />
-    </div>,
+    </motion.div>,
   ];
 
   return (
-    <div className=' w-auto lg:w-[1000px]'>
+    <div className='w-[400px] lg:w-[1000px] cursor-grab'>
       <AliceCarousel
         mouseTracking
         items={items}
