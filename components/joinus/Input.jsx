@@ -12,15 +12,23 @@ const Input = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(inputVal);
+    setInputVal({ email: '' });
   };
 
   return (
-    <form onSubmit={handleSubmit} className='flex flex-row space-x-[-5px]'>
+    <form
+      onSubmit={handleSubmit}
+      method='POST'
+      className='flex flex-row space-x-[-5px]'
+    >
       <input
+        type='email'
+        required
         name='email'
         onChange={handleChange}
-        className='w-[300px] rounded-l-md px-5 py-2'
+        className='w-auto sm:w-[300px] rounded-l-md px-5 py-2'
         placeholder='Enter your email address'
+        value={inputVal.email}
       />
       <button
         type='submit'
