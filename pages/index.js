@@ -2,6 +2,7 @@ import Head from 'next/head';
 import CollectionCont from '../components/collection/CollectionCont';
 import CommunityCont from '../components/community/CommunityCont';
 import HeroContainer from '../components/hero/HeroContainer';
+import JoinUs from '../components/joinus/JoinUs';
 import Navbar from '../components/navbar/Navbar';
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
         <HeroContainer />
         <CollectionCont />
         <CommunityCont />
+        <JoinUs />
       </div>
     </div>
   );

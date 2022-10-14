@@ -3,7 +3,7 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 
-const Scene = () => {
+const Model = () => {
   const mountRef = useRef(null);
 
   useEffect(() => {
@@ -13,13 +13,12 @@ const Scene = () => {
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(25, width / height, 1, 1000);
     scene.add(camera);
-    camera.position.z = 2;
-    camera.position.x = [-4];
+    camera.position.z = 8;
 
     const loader = new GLTFLoader();
-    loader.load('/models/scene.gltf', (gltf) => {
+    loader.load('/stylized_planet/scene.gltf', (gltf) => {
       let model = gltf.scene;
-      model.scale.set(0.6, 0.6, 0.6);
+      model.scale.set(1.3, 1.3, 1.3);
       scene.add(model);
     });
 
@@ -31,6 +30,11 @@ const Scene = () => {
     const controls = new OrbitControls(camera, renderer.domElement);
     controls.enableDamping = true;
 
+    //light
+    const pointLight = new THREE.PointLight(0xff0000, 1);
+    pointLight.position.set(8, 8, 8);
+    scene.add(pointLight);
+
     const ambientLight = new THREE.AmbientLight(0xffffff, 2);
     scene.add(ambientLight);
 
@@ -41,7 +45,6 @@ const Scene = () => {
     });
 
     //animate
-
     const animate = () => {
       controls.update();
       renderer.render(scene, camera);
@@ -57,9 +60,9 @@ const Scene = () => {
   return (
     <div
       ref={mountRef}
-      className='w-[400px] h-[400px] xl:w-[600px] xl:h-[700px] flex justify-center hover:cursor-grab '
+      className='w-[400px] min-h-[400px] xl:w-[600px] xl:h-[700px] flex justify-center hover:cursor-grab '
     ></div>
   );
 };
 
-export default Scene;
+export default Model;
