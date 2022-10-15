@@ -1,3 +1,5 @@
+Welcome to my landing page about digitalART!!!
+
 ## Getting Started
 
 First, install the dependencies, then you are ready to run the development server:
