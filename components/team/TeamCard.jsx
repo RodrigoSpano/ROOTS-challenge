@@ -1,12 +1,17 @@
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import React from 'react';
 import SocialTeam from './SocialTeam';
 
 const TeamCard = ({ img, name, job }) => {
   return (
-    <div className=' h-[300px] bg-neutral-700 rounded-md shadow-md flex flex-col items-center gap-2 select-none'>
-      <motion.img
-        whileHover={{ scale: 1.1 }}
+    <motion.div
+      whileHover={{ scale: 1.1 }}
+      className=' h-[300px] bg-neutral-700 rounded-md shadow-md flex flex-col items-center gap-2 select-none'
+    >
+      <Image
+        width='200px'
+        height='200px'
         src={img}
         className='object-contain h-[200px] rounded-md '
       />
@@ -19,7 +24,7 @@ const TeamCard = ({ img, name, job }) => {
         </p>
       </div>
       <SocialTeam />
-    </div>
+    </motion.div>
   );
 };
 
