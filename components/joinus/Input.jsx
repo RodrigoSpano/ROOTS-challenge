@@ -19,12 +19,13 @@ const Input = () => {
     <form
       onSubmit={handleSubmit}
       method='POST'
-      className='flex flex-row space-x-[-5px]'
+      className='flex flex-row space-x-[-5px] shadow-lg'
     >
       <input
         type='email'
         required
         name='email'
+        autoComplete='off'
         onChange={handleChange}
         className='w-auto sm:w-[300px] rounded-l-md px-5 py-2'
         placeholder='Enter your email address'
