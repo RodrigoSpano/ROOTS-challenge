@@ -4,9 +4,9 @@ import React from 'react';
 
 export const Item = ({ text }) => {
   return (
-    <motion.div whileHover={{ scale: 1.1 }}>
+    <motion.div whileHover={{ scale: 1.1 }} className='cursor-pointer'>
       <Link to={text} smooth={true} duration={500}>
-        <text className='text-lg capitalize'>{text}</text>
+        <p className='text-lg capitalize'>{text}</p>
       </Link>
     </motion.div>
   );

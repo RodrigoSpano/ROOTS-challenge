@@ -1,9 +1,11 @@
 import Head from 'next/head';
 import CollectionCont from '../components/collection/CollectionCont';
 import CommunityCont from '../components/community/CommunityCont';
+import Footer from '../components/footer/Footer';
 import HeroContainer from '../components/hero/HeroContainer';
 import JoinUs from '../components/joinus/JoinUs';
 import Navbar from '../components/navbar/Navbar';
+import TeamSection from '../components/team/TeamSection';
 
 export default function Home() {
   return (
@@ -19,6 +21,8 @@ export default function Home() {
         <CollectionCont />
         <CommunityCont />
         <JoinUs />
+        <TeamSection />
+        <Footer />
       </div>
     </div>
   );
