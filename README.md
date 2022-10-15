@@ -1,6 +1,4 @@
-Welcome to my landing page about digitalART!!!
-
-## Getting Started
+# DIGITAL ART WEBSITE
 
 First, install the dependencies, then you are ready to run the development server:
 
