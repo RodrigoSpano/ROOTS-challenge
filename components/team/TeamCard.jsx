@@ -7,7 +7,7 @@ const TeamCard = ({ img, name, job }) => {
   return (
     <motion.div
       whileHover={{ scale: 1.1 }}
-      className=' h-[300px] bg-neutral-700 rounded-md shadow-md flex flex-col items-center gap-2 select-none'
+      className=' h-[300px] bg-neutral-700 rounded-md shadow-md flex flex-col items-center gap-2 select-none hover:shadow-neutral-800 hover:shadow-lg'
     >
       <Image
         width='200px'

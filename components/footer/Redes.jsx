@@ -8,16 +8,16 @@ const Redes = () => {
   return (
     <div className='flex flex-wrap gap-10'>
       <Link href='https://github.com/RodrigoSpano?tab=repositories'>
-        <VscGithubAlt className='cursor-pointer text-neutral-200 text-[20px]' />
+        <VscGithubAlt className='cursor-pointer text-neutral-200 hover:text-purple-500 ease-linear transition-all text-[20px]' />
       </Link>
       <Link href=''>
-        <VscTwitter className='cursor-pointer text-neutral-200 text-[20px]' />
+        <VscTwitter className='cursor-pointer text-neutral-200 hover:text-purple-500 ease-linear transition-all text-[20px]' />
       </Link>
       <Link href=''>
-        <BsMailbox2 className='cursor-pointer text-neutral-200 text-[20px]' />
+        <BsMailbox2 className='cursor-pointer text-neutral-200 hover:text-purple-500 ease-linear transition-all text-[20px]' />
       </Link>
       <Link href='https://www.linkedin.com/in/RodrigoSpano/'>
-        <FiLinkedin className='cursor-pointer text-neutral-200 text-[20px]' />
+        <FiLinkedin className='cursor-pointer text-neutral-200 hover:text-purple-500 ease-linear transition-all text-[20px]' />
       </Link>
     </div>
   );
